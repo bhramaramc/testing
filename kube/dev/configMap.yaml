@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nl-hello-world
+data:
+  API_BASE_PATH: /nl-hello-world
+  DB_URL: jdbc:postgresql://35.189.46.182:5432/postgres?currentSchema=obp-kong
+  JAVA_OPTS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
+  KONG_URL: "http://localhost:8001"
+  LOG_LEVEL: INFO
+  WEB_LOG_LEVEL: INFO
